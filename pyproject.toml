@@ -1,0 +1,25 @@
+[project]
+name = "entity-extractor-service"
+version = "1.0.0"
+requires-python = "^3.10"
+
+[project.scripts]
+serve = "entity_extractor_service.main:main"
+
+[tool.poetry]
+name = "entity-extractor"
+version = "0.1.0"
+description = ""
+authors = ["André Claudino <claudino@d2x.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+asyncclick = "^8.1.7"
+tornado = "^6.4"
+ner-extractor = {git = "git@github.com:andreclaudino/ner-extractor.git", rev = "v0.1.0"}
+gliner = "^0.1.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
