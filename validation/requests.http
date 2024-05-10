@@ -1,0 +1,19 @@
+@base_path = http://0.0.0.0:8080
+
+###
+POST {{base_path}}/extract/
+
+{
+    "text": "Brasileirão: Vasco vs Flamengo Sub17",
+    "labels": ["country", "team", "sport league"],
+    "threshold": 0.6
+}
+
+###
+POST {{base_path}}/extract/
+
+{
+    "text": "Brasileirão: Vasco vs Flamengo Sub17",
+    "labels": ["país", "campeonato", "time esportivo"],
+    "threshold": 0.6
+}
