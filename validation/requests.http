@@ -1,5 +1,9 @@
 @base_path = http://0.0.0.0:8080
 
+
+
+###
+GET {{base_path}}/
 ###
 POST {{base_path}}/extract/
 

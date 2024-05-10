@@ -7,7 +7,7 @@ requires-python = "^3.10"
 serve = "entity_extractor_service.main:main"
 
 [tool.poetry]
-name = "entity-extractor"
+name = "entity-extractor-service"
 version = "0.1.0"
 description = ""
 authors = ["André Claudino <claudino@d2x.com.br>"]
@@ -17,7 +17,6 @@ readme = "README.md"
 python = "^3.10"
 asyncclick = "^8.1.7"
 tornado = "^6.4"
-ner-extractor = {git = "git@github.com:andreclaudino/ner-extractor.git", rev = "v0.1.0"}
 gliner = "^0.1.12"
 
 [build-system]
